@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Tickets</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+      </ul>
+    </nav>
+    <header style="background: url(images/conference-hero.jpg)">
+      <img src="images/hero-symbol.jpg" alt="laptop" />
+      <h2>ADVANCING TECHNOLOGY</h2>
+      <h3>First Annual Budding Developers Conference</h3>
+      <p>Orlando, FL - October 11, 2023</p>
+    </header>
+
+    <h1 class="tickets">Tickets</h1>
+
+    <section id="ticket-form">
+      <form action="">
+        <h3>Y<span id="easter-egg">o</span>ur Info</h3>
+        <label class="info-input" for="name">Name</label>
+        <input
+          class="block-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="NAME"
+          required
+        />
+        <label class="info-input" for="email">Email</label>
+        <input
+          class="block-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="EMAIL"
+          required
+        />
+        <h3>Package</h3>
+        <p>
+          <select class="select-dropdown" name="package" id="package">
+            <option value="standard">Standard - $149</option>
+            <option value="premium">Premium - $249</option>
+          </select>
+        </p>
+        <div>
+          <input type="checkbox" name="lodging" id="lodging" />
+          <label for="lodging">Add on Lodging - $99</label>
+        </div>
+        <div>
+          <input type="checkbox" name="meals" id="meals" />
+          <label for="meals">Add on meals - $199</label>
+        </div>
+        <input type="submit" />
+      </form>
+    </section>
+
+    <a href="index.html">Back to home</a>
+
+    <!-- The Modal -->
+
+    <div id="easter-egg-modal" class="modal-hidden">
+      <div id="modal-content">
+        <span class="close">&times;</span>
+        <label for="easter-egg-input">Enter your code</label>
+        <input type="text" id="easter-egg-input" />
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2022</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
