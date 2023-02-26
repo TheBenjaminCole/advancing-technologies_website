@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+
     <title>Assignment</title>
   </head>
   <body>
@@ -27,7 +28,8 @@
         <p>Orlando, FL - October 11, 2023</p>
       </div>
     </header>
-    <section class="expect">
+    </div>
+    <section class="expect divsec">
       <div class="wrap">
         <h3>What to expect</h3>
         <ul>
@@ -38,7 +40,7 @@
         </ul>
       </div>
     </section>
-    <section id="three-points">
+    <section id="three-points" class="divsec">
       <div class="wrap">
         <div class="three-points-section">
           <div class="three-points-img">
@@ -100,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section id="reserve-spot">
+    <section id="reserve-spot" class="divsec">
       <div class="wrap">
         <table>
           <thead>
@@ -141,7 +143,7 @@
         </table>
       </div>
     </section>
-    <section id="speakers">
+    <section id="speakers" class="divsec">
       <div class="wrap">
         <h3>Speakers</h3>
         <div class="speaker-column-1">
@@ -268,16 +270,17 @@
         </div>
       </div>
     </section>
-    <section id="home-cta">
+    <section id="home-cta" class="divsec">
       <div class="wrap">
         <h3>What are you waiting for?</h3>
         <p>If you are a new developer, this conference is for you!</p>
         <a class="button" href="tickets.html">Get Tickets</a>
-        <p>Countdown timer goes here</p>
+        <div id="countdown"></div>
       </div>
     </section>
     <footer>
       <p>&copy; 2022</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
